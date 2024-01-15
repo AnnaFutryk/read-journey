@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/read-journey/static/css/main.f855e6bc.css",
+    "main.js": "/read-journey/static/js/main.723331a0.js",
+    "static/js/787.47305d9c.chunk.js": "/read-journey/static/js/787.47305d9c.chunk.js",
+    "static/media/logo.svg": "/read-journey/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/read-journey/index.html",
+    "main.f855e6bc.css.map": "/read-journey/static/css/main.f855e6bc.css.map",
+    "main.723331a0.js.map": "/read-journey/static/js/main.723331a0.js.map",
+    "787.47305d9c.chunk.js.map": "/read-journey/static/js/787.47305d9c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.723331a0.js"
+  ]
+}
