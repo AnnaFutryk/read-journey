@@ -1,6 +1,19 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+
+  @media (min-width: 1280px) {
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+  }
+`;
+
+export const TxtBlock = styled.div`
   max-width: 335px;
   height: 411px;
   padding: 20px;
@@ -44,4 +57,24 @@ export const Title = styled.h1`
 
 export const Span = styled.span`
   color: rgba(227, 227, 227, 0.5);
+`;
+
+export const ImageBlock = styled.div`
+  display: flex;
+  justify-content: center;
+  max-width: 335px;
+  height: 351px;
+  padding: 20px 40px;
+  background-color: var(--main-gray-color);
+  border-radius: 30px;
+
+  @media (min-width: 768px) and (max-width: 1279.9px) {
+    display: none;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 600px;
+    height: 736px;
+    padding: 80px 98px;
+  }
 `;
