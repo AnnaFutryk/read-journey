@@ -1,7 +1,11 @@
 {
   "files": {
     "main.css": "/read-journey/static/css/main.5a7d19ce.css",
-    "main.js": "/read-journey/static/js/main.fcdb3342.js",
+    "main.js": "/read-journey/static/js/main.9e662acd.js",
+    "static/media/iPhone-15-Black-desk.2x.png": "/read-journey/static/media/iPhone-15-Black-desk.2x.9a48531c584cd2741c57.png",
+    "static/media/iPhone-15-Black-mob.2x.png": "/read-journey/static/media/iPhone-15-Black-mob.2x.8715bfad3b239ff63da5.png",
+    "static/media/iPhone-15-Black-desk.1x.png": "/read-journey/static/media/iPhone-15-Black-desk.1x.b596175a03991919233c.png",
+    "static/media/iPhone-15-Black-mob.1x.png": "/read-journey/static/media/iPhone-15-Black-mob.1x.0ccd076fe868658a9eb2.png",
     "static/media/error.svg": "/read-journey/static/media/error.d1f959131c1052a8d8b7dd60b2d3d871.svg",
     "static/media/eye-off.svg": "/read-journey/static/media/eye-off.fb258c3dc42a2491e5c37f761a1f8242.svg",
     "static/media/check.svg": "/read-journey/static/media/check.f7f27aa6c8f27b5c1d884787d2d744ea.svg",
@@ -9,10 +13,10 @@
     "static/media/eye.svg": "/read-journey/static/media/eye.c382ea11686a760a94eee2f48cf66c7b.svg",
     "static/media/logo.svg": "/read-journey/static/media/logo.92c04be856eadc763b09ef164b5c46d1.svg",
     "main.5a7d19ce.css.map": "/read-journey/static/css/main.5a7d19ce.css.map",
-    "main.fcdb3342.js.map": "/read-journey/static/js/main.fcdb3342.js.map"
+    "main.9e662acd.js.map": "/read-journey/static/js/main.9e662acd.js.map"
   },
   "entrypoints": [
     "static/css/main.5a7d19ce.css",
-    "static/js/main.fcdb3342.js"
+    "static/js/main.9e662acd.js"
   ]
 }
