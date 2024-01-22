@@ -27,6 +27,9 @@ code {
   --black-color: #141414;
   --blue-color: #4f92f7;
   --green-color: #30b94d;
+  --red-color: #e90516;
+
+  --transition: 250ms linear;
 }
 
 html,
