@@ -50,7 +50,7 @@ export default function LoginForm() {
   };
 
   const handleSubmit = async (values) => {
-    const { name, email, password } = values;
+    const { email, password } = values;
     try {
       await dispatch(authOperations.signIn({ email, password })).unwrap();
       toast.success(`🦄 Your sign up was successful!`, {
