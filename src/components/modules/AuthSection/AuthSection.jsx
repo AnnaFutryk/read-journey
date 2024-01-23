@@ -1,5 +1,4 @@
 import Logo from "../../common/Loader/Logo/Logo.jsx";
-import AuthUserForm from "./AuthForm/AuthForm.jsx";
 import iPhoneDeskS from "../../../assets/images/iPhone-15-Black-desk.1x.png";
 import iPhoneDeskL from "../../../assets/images/iPhone-15-Black-desk.2x.png";
 import iPhoneMobS from "../../../assets/images/iPhone-15-Black-mob.1x.png";
@@ -12,7 +11,9 @@ import {
   TxtBlock,
 } from "./AuthSection.styled.js";
 
-const AuthSection = () => {
+const AuthSection = ({ formComponent }) => {
+  const FormComponent = formComponent;
+
   return (
     <Section>
       <TxtBlock>
@@ -20,7 +21,7 @@ const AuthSection = () => {
         <Title>
           Expand your mind, reading <Span>a book</Span>
         </Title>
-        <AuthUserForm />
+        <FormComponent />
       </TxtBlock>
       <ImageBlock>
         <picture>

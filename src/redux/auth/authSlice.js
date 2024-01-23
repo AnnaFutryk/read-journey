@@ -7,7 +7,7 @@ const initialState = {
   token: "",
   isLoggedIn: false,
   isRefreshing: false,
-  userAuth: null,
+  // userAuth: null,
   //   userFavorite: null,
 };
 
@@ -44,7 +44,7 @@ const authSlice = createSlice({
         state.user = payload.user;
         state.isLoggedIn = true;
         state.isRefreshing = false;
-        state.userAuth = payload.user.userAuth;
+        // state.userAuth = payload.user.userAuth;
         // state.userFavorite = payload.user.userFavorite;
       })
       .addCase(authOperations.currentUser.rejected, (state) => {

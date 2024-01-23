@@ -1,8 +1,12 @@
+import Container from "../../components/common/Container/Container";
+import LoginForm from "../../components/modules/AuthSection/AuthForms/LoginForm";
+import AuthSection from "../../components/modules/AuthSection/AuthSection";
+
 const LoginPage = () => {
   return (
-    <>
-      <p>login</p>
-    </>
+    <Container>
+      <AuthSection formComponent={LoginForm} />
+    </Container>
   );
 };
 

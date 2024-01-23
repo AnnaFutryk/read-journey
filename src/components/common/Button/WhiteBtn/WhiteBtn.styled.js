@@ -11,7 +11,9 @@ export const Btn = styled.button`
   font-weight: 700;
   line-height: 1.285;
   letter-spacing: 0.28px;
-  transition: background-color var(--transition), color var(--transition);
+  border: 1px solid transparent;
+  transition: background-color var(--transition), color var(--transition),
+    border var(--transition);
 
   @media (min-width: 768px) {
     padding: 16px 54px;
@@ -23,9 +25,8 @@ export const Btn = styled.button`
 
   &:hover,
   &:focus {
-    position: relative;
-    top: 3px;
     background-color: transparent;
     color: var(--white-color);
+    border: 1px solid rgba(249, 249, 249, 0.2);
   }
 `;

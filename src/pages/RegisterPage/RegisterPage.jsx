@@ -1,10 +1,11 @@
 import Container from "../../components/common/Container/Container";
+import RegisterForm from "../../components/modules/AuthSection/AuthForms/RegisterForm";
 import AuthSection from "../../components/modules/AuthSection/AuthSection";
 
 const RegisterPage = () => {
   return (
     <Container>
-      <AuthSection />
+      <AuthSection formComponent={RegisterForm} />
     </Container>
   );
 };

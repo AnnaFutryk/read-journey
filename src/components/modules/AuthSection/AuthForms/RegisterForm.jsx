@@ -44,7 +44,7 @@ const schema = Yup.object().shape({
     .matches(/[0-9]/, "Password must contain at least one number"),
 });
 
-export default function AuthUserForm() {
+export default function RegisterForm() {
   const [showPassword, setShowPassword] = useState(false);
 
   const dispatch = useDispatch();

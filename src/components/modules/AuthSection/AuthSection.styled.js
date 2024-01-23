@@ -28,6 +28,7 @@ export const TxtBlock = styled.div`
 
   @media (min-width: 1280px) {
     max-width: 600px;
+    min-width: 600px;
     height: 742px;
     padding-right: 64px;
   }
