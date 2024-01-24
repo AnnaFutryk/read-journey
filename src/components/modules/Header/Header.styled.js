@@ -11,3 +11,9 @@ export const HeaderWrapper = styled.header`
   padding-left: 16px;
   padding-right: 16px;
 `;
+
+export const UserBarWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 16px;
+`;

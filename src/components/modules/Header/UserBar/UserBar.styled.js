@@ -14,6 +14,7 @@ export const AvaWrapp = styled.div`
   height: 40px;
   border-radius: 50%;
   border: 1px solid rgba(249, 249, 249, 0.2);
+  background-color: var(--deep-gray-color);
   font-size: 16px;
   font-weight: 700;
   line-height: 1.125;
