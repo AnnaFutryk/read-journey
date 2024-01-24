@@ -5,6 +5,8 @@ export const ContentContainer = styled.div`
   max-width: 1440px;
   min-width: 320px;
   padding: 4px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: 375px) {
     padding: 20px;
