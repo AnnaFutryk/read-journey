@@ -7,8 +7,6 @@ const UserBar = () => {
 
   const letterForAvatar = userName.slice(0, 1);
 
-  console.log(letterForAvatar);
-
   return (
     <Wrapper>
       <AvaWrapp>{letterForAvatar}</AvaWrapp>

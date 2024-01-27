@@ -17,7 +17,7 @@ const signUp = createAsyncThunk(
   async (credentials, thunkAPI) => {
     try {
       const { data } = await axios.post("users/signup", credentials);
-      authHeaderToken.set(data.token); //глобально сетимо токен на подальші запити
+      authHeaderToken.set(data.token);
       return data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
@@ -58,16 +58,37 @@ const currentUser = createAsyncThunk("auth/current", async (_, thunkAPI) => {
 
   try {
     const res = await axios.get("/users/current");
-
     return res.data;
   } catch (error) {
     return thunkAPI.rejectWithValue(error.message);
   }
 });
 
+const refreshAccessToken = createAsyncThunk(
+  "auth/refreshAccessToken",
+  async (_, thunkAPI) => {
+    const state = thunkAPI.getState();
+    const persistedToken = state.auth.refreshToken;
+
+    if (!persistedToken) {
+      return thunkAPI.rejectWithValue("Unable to refresh access token");
+    }
+
+    authHeaderToken.set(persistedToken);
+    try {
+      const { data } = await axios.get("/users/current/refresh");
+
+      return data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.message);
+    }
+  }
+);
+
 export const authOperations = {
   signUp,
   signIn,
   signOut,
   currentUser,
+  refreshAccessToken,
 };

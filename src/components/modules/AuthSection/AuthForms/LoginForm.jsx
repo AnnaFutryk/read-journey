@@ -53,10 +53,6 @@ export default function LoginForm() {
     const { email, password } = values;
     try {
       await dispatch(authOperations.signIn({ email, password })).unwrap();
-      toast.success(`🦄 Your sign up was successful!`, {
-        position: "top-right",
-        autoClose: 1500,
-      });
     } catch (error) {
       toast.error(`Something went wrong. Try again`, {
         position: "top-right",

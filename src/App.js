@@ -19,14 +19,14 @@ function App() {
   const isRefreshing = useSelector(authSelectors.selectIsRefreshing);
 
   useEffect(() => {
-    dispatch(authOperations.currentUser());
+    dispatch(authOperations.refreshAccessToken());
 
     if (location.pathname === "/") {
       navigate("/recommended");
     } else {
       navigate(location.pathname);
     }
-  }, [dispatch]);
+  }, [dispatch, location.pathname, navigate]);
 
   return isRefreshing ? (
     <Loader />
