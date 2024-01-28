@@ -17,11 +17,12 @@ function App() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const isRefreshing = useSelector(authSelectors.selectIsRefreshing);
+  const isLoggedIn = useSelector(authSelectors.selectIsLoggedIn);
 
   useEffect(() => {
     dispatch(authOperations.refreshAccessToken());
 
-    if (location.pathname === "/") {
+    if (location.pathname === "/" && isLoggedIn) {
       navigate("/recommended");
     } else {
       navigate(location.pathname);
