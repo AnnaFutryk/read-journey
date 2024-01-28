@@ -24,10 +24,10 @@ function App() {
 
     if (location.pathname === "/" && isLoggedIn) {
       navigate("/recommended");
-    } else {
-      navigate(location.pathname);
+    } else if (location.pathname === "/" && !isLoggedIn) {
+      navigate("/login");
     }
-  }, [dispatch, location.pathname, navigate]);
+  }, [dispatch, location.pathname, navigate, isLoggedIn]);
 
   return isRefreshing ? (
     <Loader />
