@@ -24,7 +24,7 @@ export const Link = styled(NavLink)`
   color: var(--light-gray-color);
   line-height: 1.125;
   letter-spacing: -0.32px;
-  transition: color 250ms linear;
+  transition: color var(--transition);
 
   &:hover {
     color: var(--white-color);

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const HeaderWrapper = styled.header`
-  width: 100%;
   height: 74px;
   display: flex;
   align-items: center;
@@ -10,6 +9,11 @@ export const HeaderWrapper = styled.header`
   border-radius: 15px;
   padding-left: 16px;
   padding-right: 16px;
+  margin: 20px 20px 0px 20px;
+
+  @media (min-width: 768px) {
+    margin: 32px 32px 0px 32px;
+  }
 `;
 
 export const UserBarWrapper = styled.div`

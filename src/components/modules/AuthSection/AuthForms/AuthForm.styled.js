@@ -145,11 +145,16 @@ export const Link = styled(NavLink)`
   line-height: 1.16;
   letter-spacing: -0.24px;
   text-decoration-line: underline;
+  transition: color var(--transition);
 
   @media (min-width: 768px) {
     font-size: 14px;
     line-height: 1.28;
     letter-spacing: -0.28px;
+  }
+
+  &:hover {
+    color: var(--white-color);
   }
 `;
 

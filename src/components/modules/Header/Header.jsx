@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { authOperations } from "../../../redux/auth/authOperations";
 import authSelectors from "../../../redux/auth/authSelectors";
 import BlackBtn from "../../common/Button/BlackBtn/BlackBtn";
-import Container from "../../common/Container/Container";
 import Logo from "../../common/Loader/Logo/Logo";
 import {
   BurgerBtn,
@@ -37,27 +36,25 @@ const Header = () => {
   };
 
   return (
-    <Container>
-      <HeaderWrapper>
-        <Logo />
-        <Navigation />
-        <UserBarWrapper>
-          {isLoggedIn && <UserBar />}
-          <LogOutWrapp>
-            {isLoggedIn && <BlackBtn text={"Log out"} onClick={handleLogOut} />}
-          </LogOutWrapp>
-          <BurgerBtn onClick={handleMenuClick}>
-            {!isMenuOpen && <MenuSvg />}
-          </BurgerBtn>
-          {isMenuOpen && (
-            <>
-              <Overlay onClick={handleBackdropClick} />
-              <BurgerMenu setIsMenuOpen={setMenuOpen} isMenuOpen={isMenuOpen} />
-            </>
-          )}
-        </UserBarWrapper>
-      </HeaderWrapper>
-    </Container>
+    <HeaderWrapper>
+      <Logo />
+      <Navigation />
+      <UserBarWrapper>
+        {isLoggedIn && <UserBar />}
+        <LogOutWrapp>
+          {isLoggedIn && <BlackBtn text={"Log out"} onClick={handleLogOut} />}
+        </LogOutWrapp>
+        <BurgerBtn onClick={handleMenuClick}>
+          {!isMenuOpen && <MenuSvg />}
+        </BurgerBtn>
+        {isMenuOpen && (
+          <>
+            <Overlay onClick={handleBackdropClick} />
+            <BurgerMenu setIsMenuOpen={setMenuOpen} isMenuOpen={isMenuOpen} />
+          </>
+        )}
+      </UserBarWrapper>
+    </HeaderWrapper>
   );
 };
 

@@ -9,10 +9,10 @@ export const ContentContainer = styled.div`
   margin-right: auto;
 
   @media (min-width: 375px) {
-    padding: 20px;
+    padding: 10px 20px 40px 20px;
   }
 
   @media (min-width: 768px) {
-    padding: 32px;
+    padding: 16px 32px 32px 32px;
   }
 `;
