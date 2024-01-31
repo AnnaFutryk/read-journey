@@ -13,6 +13,7 @@ export const MenuContainer = styled.div`
   align-items: center;
   margin: auto;
   background-color: var(--main-gray-color);
+  z-index: 1;
 `;
 
 export const CloseBtn = styled.button`
@@ -23,7 +24,7 @@ export const CloseBtn = styled.button`
   height: 28px;
   background-color: transparent;
   color: var(--white-color);
-  z-index: 1;
+  z-index: 2;
 `;
 
 export const Link = styled(NavLink)`
