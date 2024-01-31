@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/read-journey/static/css/main.5a7d19ce.css",
-    "main.js": "/read-journey/static/js/main.54522ae4.js",
+    "main.js": "/read-journey/static/js/main.513ffc7b.js",
     "static/media/iPhone-15-Black-desk.2x.png": "/read-journey/static/media/iPhone-15-Black-desk.2x.9a48531c584cd2741c57.png",
     "static/media/iPhone-15-Black-mob.2x.png": "/read-journey/static/media/iPhone-15-Black-mob.2x.8715bfad3b239ff63da5.png",
     "static/media/iPhone-15-Black-desk.1x.png": "/read-journey/static/media/iPhone-15-Black-desk.1x.b596175a03991919233c.png",
@@ -18,10 +18,10 @@
     "static/media/menu.svg": "/read-journey/static/media/menu.db223cd27c1047cd6e43bac542d68496.svg",
     "static/media/next.svg": "/read-journey/static/media/next.4843f72e71a04e27d9955e8dd4183bd2.svg",
     "main.5a7d19ce.css.map": "/read-journey/static/css/main.5a7d19ce.css.map",
-    "main.54522ae4.js.map": "/read-journey/static/js/main.54522ae4.js.map"
+    "main.513ffc7b.js.map": "/read-journey/static/js/main.513ffc7b.js.map"
   },
   "entrypoints": [
     "static/css/main.5a7d19ce.css",
-    "static/js/main.54522ae4.js"
+    "static/js/main.513ffc7b.js"
   ]
 }
