@@ -23,6 +23,7 @@ const persistConfig = {
   key: "auth",
   storage,
   blacklist: ["books"],
+  whiteList: ["token", "refreshToken"],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
