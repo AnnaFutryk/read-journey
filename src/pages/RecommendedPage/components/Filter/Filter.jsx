@@ -20,9 +20,10 @@ const Filter = () => {
           <InputWrapp>
             <Label htmlFor="title">Book title:</Label>
             <Input
-              customPadding="77px"
-              customMediaPadding="86px"
+              custompadding="77px"
+              custommediapadding="86px"
               type="text"
+              id="title"
               name="title"
               placeholder="Enter text"
             />
@@ -30,9 +31,10 @@ const Filter = () => {
           <InputWrapp>
             <Label htmlFor="author">The author:</Label>
             <Input
-              customPadding="85px"
-              customMediaPadding="95px"
+              custompadding="85px"
+              custommediapadding="95px"
               type="text"
+              id="author"
               name="author"
               placeholder="Enter text"
             />

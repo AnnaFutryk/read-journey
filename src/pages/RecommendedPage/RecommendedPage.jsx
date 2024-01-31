@@ -3,7 +3,7 @@ import Dashboard from "../../components/common/Dashboard/Dashboard";
 import Filter from "./components/Filter/Filter";
 import FunctionalityDescr from "./components/FunctionalityDescr/FunctionalityDescr";
 import QuoteSection from "./components/QuoteSection/QuoteSection";
-import RecommendList from "./components/RecommendList";
+import RecommendList from "./components/RecommendedList/RecommendList";
 import { Wrapper } from "./RecommendedPage.styled";
 
 const RecommendedPage = () => {

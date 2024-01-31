@@ -77,6 +77,7 @@ export default function LoginForm() {
                 <Label htmlFor="email">Mail:</Label>
                 <Input
                   style={{ paddingLeft: "53px" }}
+                  id="email"
                   type="email"
                   name="email"
                   placeholder="Your@email.com"
@@ -103,6 +104,7 @@ export default function LoginForm() {
                   type={showPassword ? "text" : "password"}
                   value={values.password}
                   name="password"
+                  id="password"
                   placeholder="Yourpasswordhere"
                   error={errors.password && touched.password ? "true" : "false"}
                   success={

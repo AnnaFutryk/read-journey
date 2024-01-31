@@ -84,6 +84,7 @@ export default function RegisterForm() {
                     paddingLeft: "65px",
                   }}
                   type="text"
+                  id="name"
                   name="name"
                   placeholder="Ilona Ratushniak"
                   error={errors.name && touched.name ? "true" : "false"}
@@ -105,6 +106,7 @@ export default function RegisterForm() {
                 <Input
                   style={{ paddingLeft: "53px" }}
                   type="email"
+                  id="email"
                   name="email"
                   placeholder="Your@email.com"
                   error={errors.email && touched.email ? "true" : "false"}
@@ -129,6 +131,7 @@ export default function RegisterForm() {
                   }}
                   type={showPassword ? "text" : "password"}
                   value={values.password}
+                  id="password"
                   name="password"
                   placeholder="Yourpasswordhere"
                   error={errors.password && touched.password ? "true" : "false"}

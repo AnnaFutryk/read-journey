@@ -50,9 +50,9 @@ export const Input = styled(Field)`
   display: block;
   padding: 14px;
   ${(props) =>
-    props.customPadding &&
+    props.custompadding &&
     css`
-      padding-left: ${props.customPadding};
+      padding-left: ${props.custompadding};
     `}
   border-radius: 12px;
   border: none;
@@ -69,9 +69,9 @@ export const Input = styled(Field)`
   @media (min-width: 768px) {
     padding: 16px 14px;
     ${(props) =>
-      props.customMediaPadding &&
+      props.custommediapadding &&
       css`
-        padding-left: ${props.customMediaPadding};
+        padding-left: ${props.custommediapadding};
       `}
     font-size: 14px;
     line-height: 1.28;
